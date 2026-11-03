@@ -67,15 +67,15 @@ Charter Information
 ..
    MANDATORY
 
-A verified identity and a valid authorization say little about what an AI agent will do on a given task. The non-deterministic, creative behaviour of AI agents is what distinguishes them from conventional software, and it is also why the security policies written for conventional software fit them poorly. Four problems follow:
+A verified identity and a valid authorization say little about what an AI agent will do on a given task. The non-deterministic, creative behaviour of AI agents is what distinguishes them from conventional software, and it is also why the security policies written for conventional software fit them poorly.
 
-1. **Identity does not determine behaviour.** An AI agent that passes every identity and authorization check can still take an action outside the authority it was granted. A re-run is generally not the same as the run: the same agent may respond differently to the same request even when its model, tools and composition are unchanged. When major components or the configuration change (for example the model or the guardrails), the behaviour changes further. An identity issued at one point therefore says less about the agent that acts later.
+1. Identity does not determine behaviour. An AI agent that passes every identity and authorization check can still take an action outside the authority it was granted. A re-run is generally not the same as the run: the same agent may respond differently to the same request even when its model, tools and composition are unchanged. When major components or the configuration change (for example the model or the guardrails), the behaviour changes further. An identity issued at one point therefore says less about the agent that acts later.
 
-2. **Security policy is not written for agents.** Classical security policy names subjects, objects and the operations allowed between them. Agents are deployed because their action space cannot be listed in advance: they are meant to handle known unknowns. A policy written as a list of permitted operations either confines the agent until its purpose is lost or leaves its behaviour unconstrained. There is no agreed way to express a policy in terms of wanted and unwanted outcomes, so that it can be enforced when an agent is the subject or the object of an action.
+2. Security policy is not written for agents. Classical security policy names subjects, objects and the operations allowed between them. Agents are deployed because their action space cannot be listed in advance: they are meant to handle known unknowns. A policy written as a list of permitted operations either confines the agent until its purpose is lost or leaves its behaviour unconstrained. There is no agreed way to express a policy in terms of wanted and unwanted outcomes, so that it can be enforced when an agent is the subject or the object of an action.
 
-3. **Revocation does not reliably stop conduct.** Revoking an identity or a right takes effect only where an enforcement point checks it again before the next action.
+3. Revocation does not reliably stop conduct. Revoking an identity or a right takes effect only where an enforcement point checks it again before the next action.
 
-4. **Enforcement decisions are not portable.** Where an action is checked at all, the decision usually ends as an internal log entry that another party can neither recompute nor rely on.
+4. Enforcement decisions are not portable. Where an action is checked at all, the decision usually ends as an internal log entry that another party can neither recompute nor rely on.
 
 Existing work addresses agent identity (ITU-T X.1285, X.402, IETF WIMSE, IETF AgentProto, the W3C Agentic Web charter, Poppy/PACT), what an agent may access in general (OASIS XACML and attribute-based access control, PACT JWT) and the platform it runs on (IETF RATS, Trusted Computing, secure enclaves). None of it addresses how a security policy is expressed and enforced when its subjects or objects are agents whose behaviour changes from one run to the next. The working group addresses that gap. Whether a third party can later check an enforcement decision is a secondary property, examined together with FG-TIDA WG1.
 
@@ -92,7 +92,7 @@ The unit of analysis is the enforcement decision for one action: the decision ta
 
 * The working group will specify requirements for enforcing security policy when the subject or the object is an AI agent: how a policy must be expressed so that it can be enforced, the decisions an enforcement point can reach and what each one means, how a decision is reached when policies collide, and how the absence of any decision is stated. It will specify requirements, not encodings or protocols.
 
-* The working group will describe and compare solution paths against the shared requirements. Two are named at the outset: identity based on agent design properties that do not change, and security policy expressed as intent, in terms of wanted and unwanted outcomes rather than the subjects and objects involved.
+* The working group will describe and compare solution paths against the shared requirements, starting with identity based on agent design properties that do not change, and with security policy expressed as intent, in terms of wanted and unwanted outcomes rather than the subjects and objects involved.
 
 * The working group will maintain shared evaluation fixtures so that paths can be compared on the same cases.
 
