@@ -24,7 +24,7 @@ pygments_style = 'colorful'
 # =============================================================================
 
 project = 'IBEA'
-release = '0.3'
+release = '0.4'
 html_title = 'IBEA Charter'
 author = 'FG-TIDA'
 
@@ -64,7 +64,7 @@ latex_documents = [
 cover_title = 'WG2: Identity, Behaviour and Enforcement for AI Agents'
 cover_series = 'FG-TIDA Working Group Charter'
 cover_subject = 'IBEA'
-cover_subtitle = 'Charter version 0.3, draft'
+cover_subtitle = 'Charter version 0.4, draft'
 
 # =============================================================================
 # Sphinx extensions
