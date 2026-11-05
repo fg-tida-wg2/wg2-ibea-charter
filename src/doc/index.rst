@@ -184,7 +184,7 @@ Out of Scope / Non-Goals
    * - 5
      - Shared evaluation fixtures (technical report with versioned fixture set)
      - Versioned cases with expected outcomes and negative controls, usable across paths and on the use-case testbed.
-     - TIDA6-FX fixture posted on FG-TIDA/themes#6; FG-TIDA/use-cases#4 mappings
+     - TIDA6-FX fixture posted on FG-TIDA/themes#6; FG-TIDA/use-cases#4 mappings; evidence-graded verdict worked examples with expected outcomes (one positive and three negative cases), contributed on FG-TIDA/themes#42
 
 
 6. Milestones
